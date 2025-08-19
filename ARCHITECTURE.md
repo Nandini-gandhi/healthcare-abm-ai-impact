@@ -5,10 +5,10 @@
 - **Run loop:** up to 500 steps with incremental plotting and a short sleep to animate.
 
 ```mermaid
-graph TD
-  UI[Streamlit UI] --> Controls[Sidebar Controls]
-  Controls --> Model[HealthcareModel (Mesa)]
-  Model --> Agents[HealthcareWorker Agents]
-  Model --> Metrics[DataCollector → Metrics DataFrame]
-  Metrics --> Charts[Matplotlib Line Chart]
+flowchart TD
+    UI[Streamlit UI] --> Controls[Sidebar Controls]
+    Controls --> Model[HealthcareModel Mesa]
+    Model --> Agents[HealthcareWorker Agents]
+    Model --> Metrics[DataCollector to Metrics DataFrame]
+    Metrics --> Charts[Matplotlib Line Chart]
 ```
